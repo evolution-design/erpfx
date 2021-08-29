@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.erpfx.MainGuiController">
+   <children>
+      <BorderPane>
+         <top>
+            <MenuBar prefHeight="14.0" prefWidth="492.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Firma">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Projekt">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Úkoly">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Prodej">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Auta">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Možnosti">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Nápověda">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <left>
+            <ListView prefHeight="400.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane focusTraversable="true" prefWidth="100.0" style="-fx-border-width: 2; -fx-border-color: black;" BorderPane.alignment="CENTER_RIGHT" />
+         </right>
+         <center>
+            <TabPane prefHeight="400.0" prefWidth="248.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="100.0" tabMinWidth="100.0" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Untitled Tab 1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="292.0" />
+                  </content>
+                </Tab>
+                <Tab text="Untitled Tab 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+         <bottom>
+            <HBox minHeight="20.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lStatus" prefHeight="17.0" prefWidth="146.0" text="Status" />
+                  <Label prefHeight="17.0" prefWidth="149.0" text="Label" />
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="lDate" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="160.0" text="Datum" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</VBox>
